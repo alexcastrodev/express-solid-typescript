@@ -4,13 +4,15 @@
   "main": "src/index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts"
+    "dev": "ts-node-dev --inspect --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "gen:doc": "node ./scripts/swagger.mjs"
   },
   "dependencies": {
     "express": "^4.18.1"
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/swagger-ui-express": "^4.1.3",
     "@types/uuid": "^8.3.4",
     "@typescript-eslint/eslint-plugin": "^5.33.1",
     "eslint": "^8.22.0",
@@ -19,6 +21,8 @@
     "eslint-plugin-import-helpers": "^1.2.1",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
+    "swagger-autogen": "^2.21.5",
+    "swagger-ui-express": "^4.5.0",
     "ts-node": "^10.9.1",
     "ts-node-dev": "^2.0.0",
     "typescript": "^4.7.4",

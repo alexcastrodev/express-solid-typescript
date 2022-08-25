@@ -1,7 +1,7 @@
 import {
   ICategoriesRepositories,
   ICreateCategoryDTO,
-} from './CategoriesRepository.types';
+} from './implementations/CategoriesRepository.types';
 import { Category } from '../model/Category';
 
 class CategoriesRepositories implements ICategoriesRepositories {

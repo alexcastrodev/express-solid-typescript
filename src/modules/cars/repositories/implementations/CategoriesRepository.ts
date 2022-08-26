@@ -1,10 +1,10 @@
 import {
   ICategoriesRepositories,
   ICreateCategoryDTO,
-} from './implementations/CategoriesRepository.types';
-import { Category } from '../entities/Category';
+} from '../CategoriesRepository.types';
+import { Category } from '../../entities/Category';
 import { Repository } from 'typeorm';
-import { AppDataSource } from '../../../database';
+import { AppDataSource } from '../../../../database';
 
 class CategoriesRepositories implements ICategoriesRepositories {
   private repository: Repository<Category>;
